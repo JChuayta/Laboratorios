@@ -1,9 +1,9 @@
 <?php
-include "../contents/header.php";
+include "../../contents/header.php";
 
-include "../contents/sidebar.php";
+include "../../contents/sidebar.php";
 
-include "../contents/navbar.php";
+include "../../contents/navbar.php";
 ?>
 <!--Contenido-->
 <?php
@@ -11,7 +11,8 @@ include "dashboard.php";
 ?>
 <!--Fin-Contenido-->
 <?php
-include "../contents/footer.php";
+
+include "../../contents/footer.php";
 ?>
 <script type="text/javascript">
   $(document).ready(function() {

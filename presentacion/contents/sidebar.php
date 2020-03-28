@@ -10,14 +10,14 @@
 			<ul class="nav">
 			
 					<li id="home">
-						<a class="nav-link" href="home.php">
+						<a class="nav-link" href="../home/home.php">
 							<i class="material-icons">dashboard</i>
 							<p>Inicio</p>
 						</a>
 					</li>
 
 					<li id="user">
-						<a class="nav-link" href="persona.php">
+						<a class="nav-link" href="../persona/index.php">
 							<i class="fa fa-user" aria-hidden="true"></i>
 							<p>Persona</p>
 						</a>
@@ -25,45 +25,57 @@
 					<li id="center">
 						<a class="nav-link" href="centro.php">
 							<i class="fa fa-university" aria-hidden="true"></i>
-							<p>Centros</p>
+							<p>Reportes</p>
 						</a>
 					</li>
-					<li id="sede">
-						<a class="nav-link" href="sede.php">
+					<li id="ambiente">
+						<a class="nav-link" href="../ambiente/index.php">
 
-							<i class="material-icons">account_balance</i>
-							<p>Facultad</p>
+						<i class="fa fa-asterisk" aria-hidden="true"></i>
+							<p>Ambiente</p>
 						</a>
 					</li>
 					<li id="program">
 						<a class="nav-link" href="programa.php">
 							<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-							<p>Materias</p>
+							<p>Equipo</p>
 						</a>
 					</li>
 
-					<li id="ambient">
-						<a class="nav-link" href="ambiente.php">
+					<li id="material">
+						<a class="nav-link" href="../material/index.php">
 							<i class="fa fa-home" aria-hidden="true"></i>
-							<p>Ambientes</p>
+							<p>Materiales</p>
 						</a>
 					</li>
 					<li id="teacher">
 						<a class="nav-link" href="instructor.php">
 							<i class="material-icons">contact_mail</i>
-							<p>Docentes</p>
+							<p>Prestamo</p>
 						</a>
 					</li>
 					<li id="user">
 						<a class="nav-link" href="usuarios.php">
 							<i class="fa fa-group" aria-hidden="true"></i>
-							<p>Usuarios</p>
+							<p>Mantenimiento</p>
 						</a>
 					</li>
 					<li id="calendar">
 						<a class="nav-link" href="horario.php">
 							<i class="fa fa-calendar" aria-hidden="true"></i>
-							<p>Horarios</p>
+							<p>Movimineto</p>
+						</a>
+					</li>
+					<li id="calendar">
+						<a class="nav-link" href="horario.php">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+							<p>Adm Horario</p>
+						</a>
+					</li>
+					<li id="calendar">
+						<a class="nav-link" href="horario.php">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+							<p>Reserva</p>
 						</a>
 					</li>
 				

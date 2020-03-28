@@ -1,7 +1,7 @@
 <?php
-include "../contents/header.php";
-include "../contents/sidebar.php";
-include "../contents/navbar.php";
+include "../../contents/header.php";
+include "../../contents/sidebar.php";
+include "../../contents/navbar.php";
 ?>
 
 <!--Contenido-->
@@ -36,9 +36,9 @@ include "../contents/navbar.php";
 
   <!--Fin-Contenido-->
   <?php
-  include "../contents/footer.php";
+  include "../../contents/footer.php";
   ?>
-  <script type="text/javascript" src="scripts/usuario.js"></script>
+  <script type="text/javascript" src="../scripts/usuario.js"></script>
 
   <div class="modal fade" id="ModalRegistroPersona" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">

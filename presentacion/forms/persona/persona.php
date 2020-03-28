@@ -1,5 +1,5 @@
 <?php
-include_once("../negocio/NPersona.php");
+/*include_once("/negocio/NPersona.php");
 $NegocioPersona = new NPersona();
 
 $ci = isset($_REQUEST["ci"]) ? $_REQUEST["ci"] : "";
@@ -19,7 +19,7 @@ if (isset($_GET["op"])) {
 			}
 			break;
 	}
-}
+}*/
 ?>
 
 <table class='table' id="tablita">

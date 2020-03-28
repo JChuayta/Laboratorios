@@ -3,7 +3,7 @@ $(document).ready(function () {
     docentes.style.display = 'none';
     administrativos.style.display = 'none';
     $("#user").addClass("active");
-    $('#tabla_persona').load("../persona.php #tablita");
+    $('#tabla_persona').load("../persona/persona.php #tablita");
     $("#formulario").on("submit", function (e) {
         guardaryeditar(e);
     })
