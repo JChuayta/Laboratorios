@@ -20,8 +20,38 @@ function guardaryeditar(e) {
     var Telefono = $("#Telefono").val();
     var Direccion = $("#Direccion").val();
     var Email = $("#Email").val();
+    var TipoPersona;
+    // docente
+    var Profesion = $("#Profesion").val();
+    var CodigoDocente = $("#CodigoDocente").val();
+
+    // Administrativo 
+    var Cargo = $("#Cargo").val();
+
+    // auxiliar
+    var Carrera = $("#Carrera").val();
+    var Codigo = $("#Codigo").val();
+    var NumFormulario = $("#NumFormulario").val();
+    var Registro = $("#Registro").val();
+    var Descripcion = $("#Descripcion").val();
+    var Tipo = $("#Tipo").val();
+
+    var checket = document.getElementById('docente');
+    var checket1 = document.getElementById('auxiliar');
+    var checket2 = document.getElementById('administrativo');
+    var url = "";
+    if (checket) {          // docente
+        url = "&profesion=" + Profesion + "&codigodocente=" + CodigoDocente;
+        TipoPersona = "docente";
+    } else if (checket1) {  // auxiliar
+        url = "&carrera=" + Carrera + "&codigo=" + Codigo + "&numformulario=" + NumFormulario + "&registro=" + Registro + "&descripcion=" + Descripcion + "&tipo=" + Tipo;
+        TipoPersona = "auxiliar";
+    } else {                // administrativo 
+        url = "&cargo=" + Cargo;
+        TipoPersona = "administativo";
+    }
     $.ajax({
-        url: "../persona.php?op=guardaryeditar&ci=" + Ci + "&nombre=" + Nombre + "&apellido=" + Apellido + "&sexo=" + Sexo + "&telefono=" + Telefono + "&direccion=" + Direccion + "&email=" + Email,
+        url: "../PPersona.php?op=guardaryeditar&ci=" + Ci + "&nombre=" + Nombre + "&apellido=" + Apellido + "&sexo=" + Sexo + "&telefono=" + Telefono + "&direccion=" + Direccion + "&email=" + Email + url + "&tipopersona=" + TipoPersona,
         type: "POST",
         contentType: false,
         processData: false,

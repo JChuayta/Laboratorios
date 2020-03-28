@@ -9,6 +9,7 @@ class DPersona
     public $telefono;
     public $direccion;
     public $email;
+    public $tipo;
     public $con;
 
 
@@ -16,7 +17,6 @@ class DPersona
     {
         $this->con = new Conexion();
     }
-
     //funcion set y get de ci
     public function get_ci()
     {
@@ -26,7 +26,6 @@ class DPersona
     {
         $this->ci = $ci;
     }
-
     //funcion set y get de nombre
     public function get_nombre()
     {
@@ -36,7 +35,6 @@ class DPersona
     {
         $this->nombre = $nombre;
     }
-
     //funcion set y get de apellido
     public function get_apellido()
     {
@@ -56,7 +54,6 @@ class DPersona
     {
         $this->sexo = $sexo;
     }
-
     //funcion set y get de telefono
     public function get_telefono()
     {
@@ -76,7 +73,6 @@ class DPersona
     {
         $this->direccion = $direccion;
     }
-
     //funcion set y get de email
     public function get_email()
     {
@@ -86,13 +82,22 @@ class DPersona
     {
         $this->email = $email;
     }
+    //funcion set y get de tipo
+    public function get_tipo()
+    {
+        return $this->tipo;
+    }
+    public function set_tipo($tipo)
+    {
+        $this->tipo = $tipo;
+    }
 
     public function insertar()
     {
         $this->con->conectar();
         return $this->con->ejecutarConsulta("insert into persona(ci,nombre,apellido,sexo,telefono,direccion,email) values($this->ci,'$this->nombre','$this->apellido','$this->sexo',$this->telefono,'$this->direccion','$this->email')");
     }
-     // me retorna un arreglo con todos las persona de la base de datos
+    // me retorna un arreglo con todos las persona de la base de datos
     public function listar()
     {
         $this->con->conectar();

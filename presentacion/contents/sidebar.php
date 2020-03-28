@@ -1,8 +1,8 @@
     <!-- Sidebar -->
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../../assets/img/sidebar-1.jpg">
       <div class="logo">
         <a href="index.php" class="simple-text">
-          <img alt="INICIO" src="../assets/img/imagen.png" width="90" height="100px">
+          <img alt="INICIO" src="../../assets/img/imagen.png" width="90" height="100px">
         </a>
       </div>
       
