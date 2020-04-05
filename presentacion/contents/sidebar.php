@@ -33,7 +33,7 @@
 				
 
 					<li id="material">
-						<a class="nav-link" href="materias.php">
+						<a class="nav-link" href="materia.php">
 							<i class="fa fa-home" aria-hidden="true"></i>
 							<p>Materiales</p>
 						</a>
