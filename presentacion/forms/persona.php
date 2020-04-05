@@ -1,7 +1,7 @@
 <?php
-include "../../contents/header.php";
-include "../../contents/sidebar.php";
-include "../../contents/navbar.php";
+include "../contents/header.php";
+include "../contents/sidebar.php";
+include "../contents/navbar.php";
 ?>
 
 <!--Contenido-->
@@ -36,9 +36,9 @@ include "../../contents/navbar.php";
 
   <!--Fin-Contenido-->
   <?php
-  include "../../contents/footer.php";
+  include "../contents/footer.php";
   ?>
-  <script type="text/javascript" src="../scripts/usuario.js"></script>
+  <script type="text/javascript" src="scripts/persona.js"></script>
 
   <div class="modal fade" id="ModalRegistroPersona" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -101,43 +101,43 @@ include "../../contents/navbar.php";
                 </label>
               </div>
 
-              <div id="auxiliares">
-                <div class="form-group ">
-                  <label for="Carerra">Carerra:</label>
-                  <select name="Carerra" class="form-control" id="Carerra">
-                    <option value="Sistemas">Sistemas</option>
-                    <option value="Redes">Redes</option>
-                    <option value="Informatica">Informatica</option>
-                  </select>
-                </div>
-                <div class="form-group ">
-                  <label for="Codigo">Codigo:</label>
-                  <input name="Codigo" class="form-control" id="Codigo">
-                </div>
-                <div class="form-group ">
-                  <label for="NumFormulario">Numero de Formulario:</label>
-                  <input name="NumFormulario" class="form-control" id="NumFormulario">
-                </div>
-                <div class="form-group ">
-                  <label for="Registro">Registro:</label>
-                  <input name="Registro" class="form-control" id="Registro">
-                </div>
-                <div class="form-group ">
-                  <label for="Descripcion">Descripcion:</label>
-                  <input name="Descripcion" class="form-control" id="Descripcion">
-                </div>
-                <div class="form-group ">
-                  <label for="Tipo">Tipo:</label>
-                  <select name="Tipo" class="form-control" id="Tipo">
-                    <option value="Aux de Lab">Auxiliar de Laboratorio</option>
-                    <option value="Aux de Catedra">Auxiliar de Catedra </option>
-                  </select>
-                </div>
 
-              </div>
             </div>
 
+            <div id="auxiliares">
+              <div class="form-group ">
+                <label for="Carerra">Carerra:</label>
+                <select name="Carerra" class="form-control" id="Carerra">
+                  <option value="Sistemas">Sistemas</option>
+                  <option value="Redes">Redes</option>
+                  <option value="Informatica">Informatica</option>
+                </select>
+              </div>
+              <div class="form-group ">
+                <label for="Codigo">Codigo:</label>
+                <input name="Codigo" class="form-control" id="Codigo">
+              </div>
+              <div class="form-group ">
+                <label for="NumFormulario">Numero de Formulario:</label>
+                <input name="NumFormulario" class="form-control" id="NumFormulario">
+              </div>
+              <div class="form-group ">
+                <label for="Registro">Registro:</label>
+                <input name="Registro" class="form-control" id="Registro">
+              </div>
+              <div class="form-group ">
+                <label for="Descripcion">Descripcion:</label>
+                <input name="Descripcion" class="form-control" id="Descripcion">
+              </div>
+              <div class="form-group ">
+                <label for="Tipo">Tipo:</label>
+                <select name="Tipo" class="form-control" id="Tipo">
+                  <option value="Aux de Lab">Auxiliar de Laboratorio</option>
+                  <option value="Aux de Catedra">Auxiliar de Catedra </option>
+                </select>
+              </div>
 
+            </div>
             <div id="docentes">
               <div class="form-group ">
                 <label for="CodigoDocente">Codigo:</label>
